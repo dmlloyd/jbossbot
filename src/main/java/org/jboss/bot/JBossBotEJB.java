@@ -55,7 +55,6 @@ public class JBossBotEJB {
         public Thread newThread(final Runnable r) {
             final Thread thread = new Thread(r, "JBossBot Scheduler Thread");
             thread.setDaemon(true);
-            thread.start();
             return thread;
         }
     });
